@@ -14,7 +14,6 @@ const sendSmsVerification = async (phoneNumber) => {
       },
       body: data,
     });
-
     const json = await response.json();
     return json.success;
   } catch (error) {
